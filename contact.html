@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Toms-Arbel Construction</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container nav-wrapper">
+        <a href="index.html" class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-building"></i></span>
+            <span><strong>TOMS-ARBEL</strong><small>CONSTRUCTION COMPANY</small></span>
+        </a>
+
+        <nav class="navbar" id="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+
+        <a href="contact.html" class="nav-cta">Get A Quote <i class="fa-solid fa-arrow-right"></i></a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="container">
+        <span class="section-tag">CONTACT OUR TEAM</span>
+        <h1>Let's Start a <span>Conversation</span></h1>
+        <p>Tell us about your property and project requirements.</p>
+        <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+    </div>
+</section>
+
+<section class="section-padding">
+    <div class="container contact-grid">
+
+        <div class="contact-content reveal">
+            <span class="section-tag">GET IN TOUCH</span>
+            <h2>We'd Love to Hear <span>From You.</span></h2>
+            <p>Contact the company to discuss your construction and renovation requirements.</p>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <small>PHONE</small>
+                    <a href="tel:+447902010974">+44 7902 010974</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <small>ADDRESS</small>
+                    <p>3 Parkinson House, Frampton Park Road, London E9 7PH</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-clock"></i>
+                <div>
+                    <small>BUSINESS HOURS</small>
+                    <p>Monday – Saturday</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-brands fa-instagram"></i>
+                <div>
+                    <small>INSTAGRAM</small>
+                    <a href="https://www.instagram.com/londonconstructioncompany/" target="_blank" rel="noopener noreferrer">@londonconstructioncompany</a>
+                </div>
+            </div>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form">
+            <h3>Request a Quote</h3>
+
+            <div class="form-row">
+                <input type="text" name="name" placeholder="Your Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+
+            <input type="tel" name="phone" placeholder="Phone Number">
+
+            <select name="service" required>
+                <option value="">Choose a Service</option>
+                <option>House Renovation</option>
+                <option>Property Refurbishment</option>
+                <option>Structural Work</option>
+                <option>Bathroom Renovation</option>
+                <option>Painting & Decoration</option>
+                <option>Other</option>
+            </select>
+
+            <textarea name="message" rows="6" placeholder="Describe your project..." required></textarea>
+
+            <button type="submit" class="btn btn-gold">
+                Submit Enquiry <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <p class="form-message" id="form-message"></p>
+        </form>
+
+    </div>
+</section>
+
+<section class="map-section">
+    <iframe
+        src="https://www.google.com/maps?q=3%20Parkinson%20House%2C%20Frampton%20Park%20Road%2C%20London%20E9%207PH&output=embed"
+        width="100%"
+        height="400"
+        style="border:0;"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Company location map">
+    </iframe>
+</section>
+
+<footer class="footer">
+    <div class="container footer-bottom">
+        <p>© <span class="year"></span> Toms-Arbel Construction Company. Demo concept.</p>
+        <a href="index.html">Back to Home</a>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

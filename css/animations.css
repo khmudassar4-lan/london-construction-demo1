@@ -1,0 +1,104 @@
+
+/* Page hero animations */
+
+.page-hero {
+    min-height: 370px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background:
+        linear-gradient(90deg, #101d2bf2, #101d2bc9),
+        url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1800")
+        center / cover;
+}
+
+.page-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.page-hero h1 {
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 6vw, 65px);
+    margin: 20px 0 12px;
+}
+
+.page-hero h1 span {
+    color: #c69a52;
+}
+
+.page-hero p {
+    color: #d1d7dc;
+    font-size: 14px;
+    line-height: 1.8;
+    max-width: 580px;
+}
+
+.breadcrumb {
+    margin-top: 30px;
+    color: #c69a52;
+    font-size: 12px;
+}
+
+.breadcrumb a {
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.breadcrumb a:hover {
+    color: #c69a52;
+}
+
+/* Staggered entrance animation */
+
+.page-hero .section-tag,
+.page-hero h1,
+.page-hero p,
+.page-hero .breadcrumb {
+    animation: pageEnter 0.8s ease both;
+}
+
+.page-hero h1 {
+    animation-delay: 0.1s;
+}
+
+.page-hero p {
+    animation-delay: 0.2s;
+}
+
+.page-hero .breadcrumb {
+    animation-delay: 0.3s;
+}
+
+@keyframes pageEnter {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Image hover */
+
+.intro-image img,
+.why-image img {
+    transition: transform 0.6s ease;
+}
+
+.intro-image:hover img,
+.why-image:hover img {
+    transform: scale(1.035);
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+    .page-hero * {
+        animation: none !important;
+    }
+}
